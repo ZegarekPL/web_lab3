@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info by Capital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Country Information by Capital</h1>
+        <input type="text" id="capitalInput" placeholder="Enter capital city name" />
+        <button onclick="fetchCountryInfo()">Search</button>
+
+        <table id="countryTable" class="hidden">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Capital</th>
+                    <th>Population</th>
+                    <th>Region</th>
+                    <th>Subregion</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+
+        <p id="errorMessage" class="error hidden">Country not found. Please try another capital.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
